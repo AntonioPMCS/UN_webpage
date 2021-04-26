@@ -1,0 +1,48 @@
+Styleguide
+
+Unity Network
+
+
+Background:
+Dark Blue
+#07121A
+
+Heading 1:
+UN Coral
+#F39369
+
+Adelle Sans Regular
+40 pt
+50 leading
+
+Subheading:
+UN Coral
+#F39369
+
+Adelle Sans Regular
+30 pt
+40 leading
+
+Lead:
+White
+#FFFFFF
+
+Adelle Sans Thin
+25 pt
+40 leading
+
+Paragraph:
+UN Sand
+#ECCCB8
+
+Adelle Sans Regular
+25 pt
+40 leading
+
+Button text:
+Dark Blue
+#07121A
+
+Adelle Sans Regular
+30 pt
+40 leading

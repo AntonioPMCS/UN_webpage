@@ -1,0 +1,14 @@
+// GENERAL
+@import "variables",
+"font",
+"general";
+
+// COMPONENTS
+@import "../component/header",
+"../component/footer";
+
+// PAGES
+@import "../pages/homepage",
+"../pages/pages";
+
+// sass assets/scss/main.scss:assets/css/style.min.css --style=compressed && postcss assets/css/style.min.css --replace --use autoprefixer

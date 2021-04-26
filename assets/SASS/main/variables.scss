@@ -1,0 +1,52 @@
+$body_backgroud: #07121A;
+
+$grid-breakpoints: (
+        xxs: 0,
+        xs: 420,
+        sm: 590px,
+        md: 769px,
+        lg: 1024px,
+        xl: 1440px,
+        xxl: 1920px,
+) !default;
+
+$grid-columns:         12 !default;
+$grid-gutter-width:    32px !default;
+
+@mixin make-boxmodel-elements($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint in map-keys($breakpoints) {
+    // CSS: LOAD BREAKPOINT
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+    // CSS: RESPONSIVE FUNCTION
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      .dis-f#{$infix} {
+        display: flex;
+      }
+      .hide#{$infix} {
+        display: none;
+      }
+    }
+  }
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@function breakpoint-min($name, $breakpoints: $breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-infix($name, $breakpoints: $breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+@include make-boxmodel-elements();

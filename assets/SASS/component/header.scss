@@ -1,0 +1,47 @@
+header {
+  margin-bottom: 150px;
+  padding-top: 50px;
+}
+
+#header_logo {
+  max-width: 288px;
+  height: auto;
+  width: 20%;
+  display: block;
+}
+
+.mainmenu {
+  > ul {
+    > li {
+      position: relative;
+      list-style: none;
+      margin-right: 34px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: #FFF;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      .submenu {
+        display:none;
+        position: absolute;
+        li {
+          list-style: none;
+          margin-top: 18px;
+          white-space: nowrap;
+        }
+      }
+
+      &:hover {
+        .submenu {
+          display:block;
+        }
+      }
+
+    }
+  }
+}
