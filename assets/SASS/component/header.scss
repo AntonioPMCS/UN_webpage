@@ -4,6 +4,16 @@ header {
 
   .mainmenu {
     display: none;
+
+    > ul {
+      > li {
+        a {
+          color: #FFF;
+          font-size: 20px;
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   #mobileMenu{
@@ -92,12 +102,6 @@ header {
           }
         }
       }
-
-      a {
-        color: #FFF;
-        font-size: 20px;
-        text-decoration: none;
-      }
     }
 
     #mobileMenu span
@@ -145,9 +149,11 @@ header {
     .mainmenu {
       display: block;
       > ul {
+        display: flex;
         > li {
           margin-right: 34px;
           margin-top: 0;
+          list-style: none;
           &:last-child {
             margin-right: 0;
           }
