@@ -25,6 +25,10 @@ body {
   display: flex;
 }
 
+.dis-b {
+  display: block;
+}
+
 .a-c {
   align-items: center;
 }
@@ -100,6 +104,18 @@ body > div.container {
 
 main {
   margin-bottom: 250px;
+}
+
+.mt-norm {
+  margin-top: 60px;
+}
+
+.mb-norm {
+  margin-bottom: 60px;
+}
+
+.mt-xlarge {
+  margin-bottom: 200px;
 }
 
 .mb-xlarge {
