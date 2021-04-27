@@ -19,4 +19,18 @@ window.onload = function() {
       });
     }
   });
+
+  // MOBILE MENU
+  const hamburgerMenu = document.getElementById('mobileMenu');
+
+  hamburgerMenu.addEventListener('click', function (e) {
+    console.log('test', this.parentElement);
+    const classList = this.parentElement.classList;
+    if (classList.contains('open')) {
+      this.parentElement.classList.remove('open');
+    } else {
+      this.parentElement.classList.add('open');
+    }
+  });
+
 };
