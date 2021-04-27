@@ -1,18 +1,51 @@
 .page {
   background-image:
           url(../images/Header.png),
-          url(../images/Left_Element.png),
           url(../images/Footer.png);
   background-position:
           top right,
-          top 60% right,
           bottom left;
-  background-size: 80% auto, contain, contain;
+  background-size: 80% auto, contain;
   background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  &.rightBg {
+    background-image:
+            url(../images/Header.png),
+            url(../images/Left_Element.png),
+            url(../images/Footer.png);
+    background-position:
+            top right,
+            top 60% right,
+            bottom left;
+    background-size: 80% auto, contain, contain;
+  }
+  &.leftBg {
+    background-image:
+            url(../images/Header.png),
+            url(../images/Right_Element.png),
+            url(../images/Footer.png);
+    background-position:
+            top right,
+            top 40% right,
+            bottom left;
+    background-size: 80% auto, contain, contain;
+  }
+  &.rightLeftBg {
+    background-image:
+            url(../images/Header.png),
+            url(../images/Right_Element.png),
+            url(../images/Left_Element.png),
+            url(../images/Footer.png);
+    background-position:
+            top right,
+            top 30% left,
+            top 60% right,
+            bottom left;
+    background-size: 80% auto, contain, contain, contain;
+  }
 }
 
 .block-left {
@@ -21,7 +54,8 @@
 
 .block-center {
   max-width: 840px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .block-right {

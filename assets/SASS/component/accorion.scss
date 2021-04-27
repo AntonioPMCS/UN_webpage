@@ -1,0 +1,37 @@
+.accordion_menu {
+  li {
+    list-style: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+    h6 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ECCCB8;
+      font-size: 30px;
+      &:after {
+        content: '+';
+        font-size: 30px;
+        margin-left: 50px;
+        color: #F39369;
+      }
+    }
+    p {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.7s;
+    }
+
+    &.active {
+      h6 {
+        &:after {
+          content: '-';
+        }
+      }
+      p {
+        max-height: 100px;
+      }
+    }
+
+  }
+}

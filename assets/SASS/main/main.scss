@@ -5,10 +5,11 @@
 
 // COMPONENTS
 @import "../component/header",
-"../component/footer";
+"../component/footer",
+"../component/accorion";
 
 // PAGES
-@import "../pages/homepage",
+@import "../pages/team",
 "../pages/pages";
 
 // sass assets/scss/main.scss:assets/css/style.min.css --style=compressed && postcss assets/css/style.min.css --replace --use autoprefixer

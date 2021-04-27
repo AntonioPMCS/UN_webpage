@@ -29,6 +29,10 @@ body {
   align-items: center;
 }
 
+.a-t {
+  align-items: flex-start;
+}
+
 .jc-b {
   justify-content: space-between;
 }
@@ -56,6 +60,17 @@ h4 {
   font-size: 30px;
 }
 
+h5 {
+  font-weight: 400;
+  color: #F39369;
+  font-size: 20px;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
 p {
   line-height: 2;
   font-size: 20px;
@@ -69,13 +84,14 @@ p {
   font-style: italic;
 }
 
-button {
+button, .btnStyle {
   margin-top: 40px;
   background: #B1BDBC;
   border-radius: 48px;
   padding: 6px 29px;
   color: #000000;
   border: none;
+  text-decoration: none;
 }
 
 body > div.container {
@@ -84,4 +100,8 @@ body > div.container {
 
 main {
   margin-bottom: 250px;
+}
+
+.mb-xlarge {
+  margin-bottom: 200px;
 }
