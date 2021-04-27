@@ -19,7 +19,8 @@
     p {
       max-height: 0;
       overflow: hidden;
-      transition: all 0.7s;
+      transition: all 0.4s;
+      line-height: 1.2;
     }
 
     &.active {
@@ -29,7 +30,7 @@
         }
       }
       p {
-        max-height: 100px;
+        max-height: 300px;
       }
     }
 
