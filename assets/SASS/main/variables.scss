@@ -25,6 +25,31 @@ $grid-gutter-width:    32px !default;
       .hide#{$infix} {
         display: none;
       }
+      .flex-dir-row#{$infix} {
+        flex-direction: row;
+      }
+      .flex-dir-col#{$infix} {
+        flex-direction: column;
+      }
+      .mt-0#{$infix} {
+        margin-top: 60px;
+      }
+      .mb-0#{$infix} {
+        margin-bottom: 60px;
+      }
+      .mt-norm#{$infix} {
+        margin-top: 60px;
+      }
+      .mb-norm#{$infix} {
+        margin-bottom: 60px;
+      }
+
+      .mt-xlarge#{$infix} {
+        margin-bottom: 200px;
+      }
+      .mb-xlarge#{$infix} {
+        margin-bottom: 200px;
+      }
     }
   }
 }

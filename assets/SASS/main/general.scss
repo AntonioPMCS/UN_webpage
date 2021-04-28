@@ -4,7 +4,10 @@
   box-sizing: border-box;
   font-family: 'Nunito';
   color: #FFFFFF;
+  font-size: 16px;
+  @media (min-width: 768px) {
   font-size: 20px;
+  }
 }
 
 body {
@@ -104,20 +107,4 @@ body > div.container {
 
 main {
   margin-bottom: 250px;
-}
-
-.mt-norm {
-  margin-top: 60px;
-}
-
-.mb-norm {
-  margin-bottom: 60px;
-}
-
-.mt-xlarge {
-  margin-bottom: 200px;
-}
-
-.mb-xlarge {
-  margin-bottom: 200px;
 }
