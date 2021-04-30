@@ -4,9 +4,12 @@
   box-sizing: border-box;
   font-family: 'Nunito';
   color: #FFFFFF;
+}
+
+html {
   font-size: 16px;
   @media (min-width: 768px) {
-  font-size: 20px;
+    font-size: 20px;
   }
 }
 
@@ -19,8 +22,8 @@ body {
 
 .container {
   max-width: 1280px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin: auto;
   height: 100%;
   flex: 1 1 100%;
@@ -54,36 +57,36 @@ img {
 
 h1 {
   color: #F39369;
-  font-size: 40px;
+  font-size: 2rem;
   margin-bottom: 60px;
 }
 
 h3 {
   color: #F39369;
-  font-size: 40px;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 
 h4 {
   font-weight: 400;
   color: #F39369;
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 h5 {
   font-weight: 400;
   color: #F39369;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 h6 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 p {
   line-height: 2;
-  font-size: 20px;
+  font-size: 1rem;
   margin-bottom: 20px;
   &:last-child {
     margin-bottom: 0;
@@ -95,7 +98,7 @@ p {
 }
 
 button, .btnStyle {
-  margin-top: 40px;
+  margin-top: 2rem;
   background: #B1BDBC;
   border-radius: 48px;
   padding: 6px 29px;
@@ -116,9 +119,10 @@ main {
   body > div.container {
     margin-bottom: 250px;
   }
+}
 
-  .container {
-    padding-left: 40px;
-    padding-right: 40px;
+@media (min-width: 1280px) {
+  main {
+    margin-bottom: 450px;
   }
 }

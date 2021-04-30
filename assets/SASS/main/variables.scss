@@ -32,10 +32,10 @@ $grid-gutter-width:    32px !default;
         flex-direction: column;
       }
       .mt-0#{$infix} {
-        margin-top: 60px;
+        margin-top: 0;
       }
       .mb-0#{$infix} {
-        margin-bottom: 60px;
+        margin-bottom: 0;
       }
       .mt-norm#{$infix} {
         margin-top: 60px;
