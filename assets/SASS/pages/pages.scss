@@ -44,7 +44,13 @@
             top 30% left,
             top 60% right,
             bottom left;
-    background-size: 80% auto, contain, contain, contain;
+    background-size: auto 140px, 10% auto, 20% auto, auto 400px;
+    @media (min-width: 768px) {
+      background-size: 70% auto, 10% auto, 20% auto, auto 400px;
+    }
+    @media (min-width: 1280px) {
+      background-size: 70% auto, 10% auto, 20% auto, 80% auto;
+    }
   }
 }
 

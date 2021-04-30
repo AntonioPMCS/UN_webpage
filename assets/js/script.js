@@ -24,12 +24,15 @@ window.onload = function() {
   const hamburgerMenu = document.getElementById('mobileMenu');
 
   hamburgerMenu.addEventListener('click', function (e) {
-    console.log('test', this.parentElement);
     const classList = this.parentElement.classList;
+    const body = document.getElementsByTagName("body")[0];
+    console.log('test', body);
     if (classList.contains('open')) {
       this.parentElement.classList.remove('open');
+      body.classList.remove('blockScroll');
     } else {
       this.parentElement.classList.add('open');
+      body.classList.add('blockScroll');
     }
   });
 
