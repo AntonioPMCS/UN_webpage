@@ -25,7 +25,7 @@
       background-size: 70% auto, 10% auto, auto 400px;
     }
     @media (min-width: 1280px) {
-      background-size: 70% auto, 10% auto, 80% auto;
+      background-size: 70% auto, 150px auto, 80% auto;
     }
   }
   &.leftBg {
@@ -42,7 +42,7 @@
       background-size: 70% auto, 10% auto, auto 400px;
     }
     @media (min-width: 1280px) {
-      background-size: 70% auto, 10% auto, 80% auto;
+      background-size: 70% auto, 120px auto, 80% auto;
     }
   }
   &.rightLeftBg {
@@ -61,7 +61,7 @@
       background-size: 70% auto, 10% auto, 10% auto, auto 400px;
     }
     @media (min-width: 1280px) {
-      background-size: 70% auto, 10% auto, 10% auto, 80% auto;
+      background-size: 70% auto, 120px auto, 150px auto, 80% auto;
     }
   }
 }
