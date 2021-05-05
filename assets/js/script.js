@@ -35,7 +35,9 @@ window.onload = function() {
         window.scrollTo({
           top: anchor.offsetTop,
           behavior: 'smooth',
-        })
+        });
+        const hamburgerMenu = document.getElementById('mobileMenu');
+        hamburgerMenu.parentElement.classList.remove('open');
       }
     });
   });

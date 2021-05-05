@@ -31,6 +31,25 @@
     main {
       padding-right: 10%;
     }
+    &.noHeader {
+      background-image:
+              url(../images/Left_Element.png),
+              url(../images/Footer.png);
+      background-position:
+              top 60% right,
+              bottom left;
+      background-size: 10% auto, auto 400px;
+      @media (min-width: 768px) {
+        background-size: 10% auto, auto 400px;
+      }
+      @media (min-width: 1280px) {
+        background-size: 150px auto, 80% auto;
+      }
+
+      main {
+        padding-right: 10%;
+      }
+    }
   }
   &.leftBg {
     background-image:
