@@ -1,6 +1,7 @@
 header {
-  margin-bottom: 50px;
   padding-top: 25px;
+  height: 20%;
+  margin-bottom: 15%;
 
   .mainmenu {
     display: none;
@@ -186,5 +187,11 @@ header {
         }
       }
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    margin-bottom: 20%;
   }
 }

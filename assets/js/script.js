@@ -20,6 +20,26 @@ window.onload = function() {
     }
   });
 
+  // ANCHOR MENU
+  const links = document.getElementsByTagName('a');
+  [...links].forEach((el) => {
+    // GET EACH CHILD
+    el.addEventListener('click', function (e) {
+      const href = this.getAttribute("href").replace("#", '');
+      const anchor = document.getElementById(href);
+      console.log(href, anchor);
+      if (!href || anchor) {
+        e.preventDefault();
+      }
+      if (anchor) {
+        window.scrollTo({
+          top: anchor.offsetTop,
+          behavior: 'smooth',
+        })
+      }
+    });
+  });
+
   // MOBILE MENU
   const hamburgerMenu = document.getElementById('mobileMenu');
 

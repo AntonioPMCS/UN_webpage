@@ -24,10 +24,15 @@ body {
   max-width: 1280px;
   padding-left: 40px;
   padding-right: 40px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   flex: 1 1 100%;
   width: 100%;
+}
+
+main {
+  flex: 1 1 100%;
 }
 
 .dis-f {
@@ -105,24 +110,5 @@ button, .btnStyle {
   color: #000000;
   border: none;
   text-decoration: none;
-}
-
-body > div.container {
-  margin-bottom: 100px;
-}
-
-main {
-  margin-bottom: 250px;
-}
-
-@media (min-width: 1024px) {
-  body > div.container {
-    margin-bottom: 250px;
-  }
-}
-
-@media (min-width: 1280px) {
-  main {
-    margin-bottom: 450px;
-  }
+  font-size: 1.2rem;
 }

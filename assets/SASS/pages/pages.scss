@@ -27,6 +27,10 @@
     @media (min-width: 1280px) {
       background-size: 70% auto, 150px auto, 80% auto;
     }
+
+    main {
+      padding-right: 10%;
+    }
   }
   &.leftBg {
     background-image:
@@ -35,7 +39,7 @@
             url(../images/Footer.png);
     background-position:
             top right,
-            top 40% right,
+            top 40% left,
             bottom left;
     background-size: auto 140px, 10% auto, auto 400px;
     @media (min-width: 768px) {
@@ -43,6 +47,9 @@
     }
     @media (min-width: 1280px) {
       background-size: 70% auto, 120px auto, 80% auto;
+    }
+    main {
+      padding-left: 10%;
     }
   }
   &.rightLeftBg {
@@ -62,6 +69,10 @@
     }
     @media (min-width: 1280px) {
       background-size: 70% auto, 120px auto, 150px auto, 80% auto;
+    }
+    main {
+      padding-left: 10%;
+      padding-right: 10%;
     }
   }
 }
