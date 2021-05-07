@@ -37,8 +37,26 @@ $grid-gutter-width:    32px !default;
       .mb-0#{$infix} {
         margin-bottom: 0;
       }
+      .ml-0#{$infix} {
+        margin-left: 0;
+      }
+      .mr-0#{$infix} {
+        margin-right: 0;
+      }
+      .ml-small#{$infix} {
+        margin-left: 15px;
+      }
+      .mr-small#{$infix} {
+        margin-right: 15px;
+      }
       .mt-norm#{$infix} {
         margin-top: 60px;
+      }
+      .ml-norm#{$infix} {
+        margin-left: 60px;
+      }
+      .mr-norm#{$infix} {
+        margin-right: 60px;
       }
       .mb-norm#{$infix} {
         margin-bottom: 60px;
