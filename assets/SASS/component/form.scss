@@ -1,0 +1,45 @@
+form {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  textarea, {
+    background: transparent;
+    border: 2px solid #274358;
+    border-radius: 48px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    &::placeholder {
+      color: #FFFFFF;
+    }
+  }
+  &#transferData {
+    align-items: center;
+    margin-top: 60px;
+    button {
+      font-size: 0.8rem;
+      white-space: nowrap;
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    &#transferData {
+      display: flex;
+      align-items: center;
+      margin-top: 60px;
+      button {
+        margin-left: 15px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        margin-top: 0;
+        width: fit-content;
+      }
+    }
+  }
+}

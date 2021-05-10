@@ -55,6 +55,10 @@ main {
   justify-content: space-between;
 }
 
+.jc-sa {
+  justify-content: space-around;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -68,18 +72,27 @@ h1 {
   color: #F39369;
   font-size: 2rem;
   margin-bottom: 60px;
+  &.altCol {
+    color: #4B9791
+  }
 }
 
 h3 {
   color: #F39369;
   font-size: 2rem;
   margin-bottom: 40px;
+  &.altCol {
+    color: #4B9791
+  }
 }
 
 h4 {
   font-weight: 400;
   color: #F39369;
   font-size: 1.5rem;
+  &.altCol {
+    color: #4B9791
+  }
 }
 
 h5 {
@@ -100,6 +113,24 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+  &.altCol {
+    color: #4B9791
+  }
+
+  &.txtSmall {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+}
+
+hr {
+  box-shadow: #4b9791 0px 3px 6px;
+  height: 2px;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 185px;
+  background-color: #FFFFFF;
+  border: none;
 }
 
 .fs-i {
@@ -118,4 +149,41 @@ button, .btnStyle {
   font-size: 1rem;
   display: block;
   width: fit-content;
+}
+
+.brdRadius {
+  border-radius: 25px;
+}
+
+.bgBlue {
+  background: #0F212E;
+  padding: 58px 34px;
+}
+
+.customNumList {
+  padding: 0;
+  margin: 0;
+  counter-reset: custom-counter;
+  li {
+    list-style: none;
+    counter-increment: custom-counter;
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 0.8rem;
+    &:before {
+      content: counter(custom-counter);
+      flex: 0 0 34px;
+      height: 34px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: $body_backgroud;
+      box-shadow: #FFF 2px 2px 8px;
+      border-radius: 50%;
+      margin-right: 25px;
+      font-size: 0.8rem;
+      line-height: 1.2;
+    }
+
+  }
 }

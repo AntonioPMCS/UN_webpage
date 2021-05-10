@@ -19,11 +19,12 @@ $grid-gutter-width:    32px !default;
     $infix: breakpoint-infix($breakpoint, $breakpoints);
     // CSS: RESPONSIVE FUNCTION
     @include media-breakpoint-up($breakpoint, $breakpoints) {
-      .dis-f#{$infix} {
-        display: flex;
-      }
       .hide#{$infix} {
         display: none;
+      }
+      // DISPAY FLEX
+      .dis-f#{$infix} {
+        display: flex;
       }
       .flex-dir-row#{$infix} {
         flex-direction: row;
@@ -31,6 +32,7 @@ $grid-gutter-width:    32px !default;
       .flex-dir-col#{$infix} {
         flex-direction: column;
       }
+      // MARGIN
       .mt-0#{$infix} {
         margin-top: 0;
       }
@@ -43,11 +45,17 @@ $grid-gutter-width:    32px !default;
       .mr-0#{$infix} {
         margin-right: 0;
       }
+      .mt-small#{$infix} {
+        margin-top: 15px;
+      }
       .ml-small#{$infix} {
         margin-left: 15px;
       }
       .mr-small#{$infix} {
         margin-right: 15px;
+      }
+      .mb-small#{$infix} {
+        margin-bottom: 15px;
       }
       .mt-norm#{$infix} {
         margin-top: 60px;
@@ -61,12 +69,15 @@ $grid-gutter-width:    32px !default;
       .mb-norm#{$infix} {
         margin-bottom: 60px;
       }
-
       .mt-xlarge#{$infix} {
         margin-bottom: 200px;
       }
       .mb-xlarge#{$infix} {
         margin-bottom: 200px;
+      }
+      // width
+      .w-per-100#{$infix} {
+        width: 100%;
       }
     }
   }
