@@ -6,29 +6,35 @@ footer {
     font-size: 30px;
     margin-bottom: 25px;
   }
-  .socailNav {
-    li {
-      display: inline-block;
-      width: 30px;
-      margin-right: 15px;
-      margin-bottom: 15px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-  @media (min-width: 768px) {
-    .socailNav {
-      li {
-        width: 40px;
-        margin-right: 25px;
-      }
-    }
-  }
   @media (min-width: 1280px) {
     margin-top: 30%;
     padding-bottom: 100px;
   }
+}
 
+.socailNav {
+  li {
+    display: inline-block;
+    width: 30px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &.invertColor {
+    img {
+      -webkit-filter: invert(100%); /* Safari/Chrome */
+      filter: invert(100%);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .socailNav {
+    li {
+      width: 40px;
+      margin-right: 25px;
+    }
+  }
 }
