@@ -156,6 +156,9 @@ button, .btnStyle {
   &.altShadow {
     box-shadow: #F39369 2px 2px 10px;
   }
+  &:disabled {
+    opacity: 0.2;
+  }
 }
 
 .brdRadius {

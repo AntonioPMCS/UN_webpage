@@ -81,6 +81,7 @@ header {
     .mainmenu {
       display: block;
       position: fixed;
+      z-index: 9;
       top: 0;
       left: 0;
       width: 100%;
@@ -140,6 +141,8 @@ header {
   height: auto;
   width: 20%;
   display: block;
+  position: relative;
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
