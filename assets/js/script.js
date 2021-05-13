@@ -27,7 +27,6 @@ window.onload = function() {
     el.addEventListener('click', function (e) {
       const href = this.getAttribute("href").replace("#", '');
       const anchor = document.getElementById(href);
-      console.log(href, anchor);
       if (!href || anchor) {
         e.preventDefault();
       }
@@ -48,7 +47,6 @@ window.onload = function() {
   hamburgerMenu.addEventListener('click', function (e) {
     const classList = this.parentElement.classList;
     const body = document.getElementsByTagName("body")[0];
-    console.log('test', body);
     if (classList.contains('open')) {
       this.parentElement.classList.remove('open');
       body.classList.remove('blockScroll');
